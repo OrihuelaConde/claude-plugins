@@ -26,17 +26,21 @@ Replace `PLUGIN` with a name from the [plugin list](#plugins).
 
 ## List a new plugin
 
-To list a plugin, add an entry to `plugins` in `.claude-plugin/marketplace.json`, with the plugin's repository as its source:
+To list a plugin, add an entry to `plugins` in `.claude-plugin/marketplace.json`, with the HTTPS address of the plugin's repository as its source:
 
 ```json
 {
   "name": "PLUGIN",
-  "source": { "source": "github", "repo": "OrihuelaConde/REPOSITORY" },
+  "source": { "source": "url", "url": "https://github.com/OrihuelaConde/REPOSITORY.git" },
   "description": "DESCRIPTION"
 }
 ```
 
-Replace `PLUGIN` with the `name` in the plugin's `.claude-plugin/plugin.json`, `REPOSITORY` with its repository, and `DESCRIPTION` with one line about what it does. Then check the file and push:
+Replace `PLUGIN` with the `name` in the plugin's `.claude-plugin/plugin.json`, `REPOSITORY` with its repository, and `DESCRIPTION` with one line about what it does.
+
+Use a `url` source with the HTTPS address, not a `github` source: on Windows, Claude Code clones a `github` source over SSH, so the install fails for anyone without an SSH key for GitHub.
+
+Then check the file and push:
 
 ```bash
 claude plugin validate .

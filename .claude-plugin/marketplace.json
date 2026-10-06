@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "cozy-clawd",
-      "source": { "source": "github", "repo": "OrihuelaConde/cozy-clawd" },
+      "source": { "source": "url", "url": "https://github.com/OrihuelaConde/cozy-clawd.git" },
       "description": "An unofficial fan mod: a cozy pixel-art band above the prompt where Clawd acts out what Claude is doing, beside a scene of session meters",
       "homepage": "https://github.com/OrihuelaConde/cozy-clawd"
     }
