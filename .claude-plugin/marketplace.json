@@ -11,6 +11,12 @@
       "source": { "source": "url", "url": "https://github.com/OrihuelaConde/cozy-clawd.git" },
       "description": "An unofficial fan mod: a cozy pixel-art band above the prompt where Clawd acts out what Claude is doing, beside a scene of session meters",
       "homepage": "https://github.com/OrihuelaConde/cozy-clawd"
+    },
+    {
+      "name": "local-whisper",
+      "source": { "source": "url", "url": "https://github.com/OrihuelaConde/local-whisper-mcp.git" },
+      "description": "Skill for the Local Whisper MCP server: transcribe audio and video with Whisper on your computer, privately",
+      "homepage": "https://github.com/OrihuelaConde/local-whisper-mcp"
     }
   ]
 }
