@@ -23,6 +23,7 @@ Replace `PLUGIN` with a name from the [plugin list](#plugins).
 | Plugin | What it does |
 | --- | --- |
 | [cozy-clawd](https://github.com/OrihuelaConde/cozy-clawd) | An unofficial fan mod: a cozy pixel-art band above the prompt where Clawd acts out what Claude is doing, beside a scene of session meters. |
+| [local-whisper](https://github.com/OrihuelaConde/local-whisper-mcp) | Skill for the Local Whisper MCP server, which transcribes audio and video with Whisper on your computer. Install the server from its [latest release](https://github.com/OrihuelaConde/local-whisper-mcp/releases/latest). |
 
 ## List a new plugin
 
