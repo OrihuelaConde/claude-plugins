@@ -14,7 +14,7 @@
     },
     {
       "name": "local-whisper",
-      "source": { "source": "url", "url": "https://github.com/OrihuelaConde/local-whisper-mcp.git" },
+      "source": { "source": "git-subdir", "url": "https://github.com/OrihuelaConde/local-whisper-mcp.git", "path": "plugin" },
       "description": "Skill for the Local Whisper MCP server: transcribe audio and video with Whisper on your computer, privately",
       "homepage": "https://github.com/OrihuelaConde/local-whisper-mcp"
     }
