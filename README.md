@@ -41,6 +41,18 @@ Replace `PLUGIN` with the `name` in the plugin's `.claude-plugin/plugin.json`, `
 
 Use a `url` source with the HTTPS address, not a `github` source: on Windows, Claude Code clones a `github` source over SSH, so the install fails for anyone without an SSH key for GitHub.
 
+When the plugin lives in a folder of its repository, use a `git-subdir` source instead, with the folder in `path`:
+
+```json
+{
+  "name": "PLUGIN",
+  "source": { "source": "git-subdir", "url": "https://github.com/OrihuelaConde/REPOSITORY.git", "path": "FOLDER" },
+  "description": "DESCRIPTION"
+}
+```
+
+Replace `FOLDER` with the folder that holds the plugin's `.claude-plugin/plugin.json`. Claude Code then checks out only that folder.
+
 Then check the file and push:
 
 ```bash
